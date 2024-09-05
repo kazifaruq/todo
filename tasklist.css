@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+ul {
+    background-color: lightgreen;
+    padding: 20px;
+    list-style-type: none;
+    border-radius: 5px;
+}
+li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto; /* 3 equal columns and one for buttons */
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.task-info {
+    display: contents; /* Use contents to allow grid layout to work */
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.task-text{
+    border: 10px;
+    border-color: #dc3545;
+    font-size: 1.9em;
+    color: #82c9f3;
+}
+.entry-time {
+    color: blue;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+.complete-time {
+    color: green;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.edit-button {
+    background-color: #ffc107;
+}
+.edit-button:hover {
+    background-color: #e0a800;
+}
+.delete-button {
+    background-color: #dc3545;
+}
+.delete-button:hover {
+    background-color: #c82333;
+}
+.complete-button {
+    background-color: #28a745;
+    
+}
+.complete-button:hover {
+    background-color: #218838;
+}
